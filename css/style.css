@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;900&display=swap');
+
+@font-face {
+    font-family: "Coiny";
+    src: url("../fonts/coiny2_0.woff") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: 0;
+    background: none;
+    outline: none;
+}
+
+.container {
+    max-width: 998px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 52px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 54px;
+}
+
+h1 {
+    margin-top: 50px;
+    font-family: 'Coiny', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+section .container {
+    padding: 0 26px;
+}
+
+.header__logo {
+    width: 180px;
+    height: 60px;
+}
+
+.header__button {
+    padding: 15px 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    border: 5px solid #FF0000;
+    box-shadow: 2px 0px 2px rgba(255, 0, 0, 0.25), -2px 0px 2px rgba(255, 0, 0, 0.25), 0px -2px 2px rgba(255, 0, 0, 0.25), 0px 2px 2px rgba(255, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.main__img {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    height: 312px;
+}
+
+.main__img img {
+    position: absolute;
+}
+
+.img__pool {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img__ferz {
+    right: 0;
+}
+
+h2 {
+    position: relative;
+    font-family: 'Coiny', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.title__schedule {
+    background: linear-gradient(0deg, #9E1616, #9E1616);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 136px;
+}
+
+.title__schedule:before {
+    content: url("../img/peshka.png");
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 50px;
+    bottom: 50%;
+}
+
+
+.title__schedule:after {
+    content: url("../img/peshka.png");
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    right: 50px;
+    bottom: 50%;
+    transform: scale(-1, 1)
+}
+
+.box__schedule {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.schedule__card {
+    max-width: 258px;
+    width: 100%;
+    padding: 50px;
+    margin-top: 40px;
+    border: 8px solid #9E1616;
+    background: rgba(158, 22, 22, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    text-align: center;
+}
+
+.card__title {
+    font-family: 'Coiny', sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 20px;
+    color: #9E1616;
+}
+
+.card__list {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card__time {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.title__price {
+    background: linear-gradient(0deg, #007241, #007241);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 190px;
+}
+
+.title__price:before {
+    content: url("../img/horse.png");
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+}
+
+.title__price:after {
+    content: url("../img/horse.png");
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: scale(-1, 1)
+}
+
+.price__card {
+    max-width: 258px;
+    width: 100%;
+    height: 335px;
+    padding: 50px 43px;
+    margin-top: 40px;
+    border: 8px solid #007241;
+    background: rgba(0, 114, 65, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    text-align: center;
+}
+
+.card__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 170px;
+    justify-content: space-between;
+}
+
+.price__card .card__title {
+    color: #007241;
+}
+
+.card__desc span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card__desc .card__desc-price {
+    font-weight: 900;
+    line-height: 24px;
+}
+
+.card__desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__educators {
+    background: linear-gradient(0deg, #9E1616, #9E1616);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 190px;
+}
+
+.title__educators:before {
+    content: url("../img/stick.png");
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 50px;
+    bottom: 20%;
+    transform: scale(-1, 1)
+}
+
+.title__educators:after {
+    content: url("../img/stick.png");
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    right: 50px;
+    bottom: 20%;
+}
+
+.educators {
+    display: flex;
+    justify-content: space-between;
+}
+
+.educator__box {
+    max-width: 433px;
+    width: 100%;
+    text-align: center;
+    background: rgba(158, 22, 22, 0.1);
+    border: 8px solid #9E1616;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 32px 32px;
+}
+
+.educator__name {
+    font-family: 'Coiny', sans-serif;
+    font-size: 30px;
+    line-height: 33px;
+    color: #9E1616;
+    margin-top: 32px;
+}
+
+.educator__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+.title__about {
+    background: linear-gradient(0deg, #007241, #007241);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 190px;
+}
+
+.title__about:before {
+    content: url("../img/queen.png");
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    transform: scale(-1, 1)
+}
+
+.title__about:after {
+    content: url("../img/queen.png");
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+
+/* Slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+    border: 8px solid #007241;
+    border-radius: 40px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 0 !important;
+    text-align: center;
+    font-size: 18px;
+    background: rgba(0, 114, 65, 0.1);
+    width: 300px !important;
+    cursor: grab;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    padding: 0 36px;
+}
+
+.about__info {
+     font-family: 'Nunito', sans-serif;
+     font-size: 18px;
+     font-weight: 700;
+ }
+
+.about__title {
+    font-family: 'Coiny', sans-serif;
+    font-size: 26px;
+    color: #007241;
+    margin-bottom: 20px;
+}
+
+.swiper-slide-revers {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.swiper-slide img {
+    height: 300px;
+}
+
+.swiper-slide-revers img {
+    height: 300px;
+    width: 300px;
+}
+
+.contact__about {
+    background: linear-gradient(0deg, #9E1616, #9E1616);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 190px;
+}
+
+.contact__about:before {
+    content: url("../img/tower.png");
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scale(-1, 1)
+}
+
+.contact__about:after {
+    content: url("../img/tower.png");
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#map {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
