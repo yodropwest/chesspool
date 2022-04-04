@@ -57,11 +57,16 @@ button {
     gap: 54px;
 }
 
+.header__list a {
+    color: rgba(146, 71, 202, 1);
+}
+
 h1 {
     margin-top: 50px;
     font-family: 'Coiny', sans-serif;
     font-size: 70px;
     text-align: center;
+    color: rgba(146, 71, 202, 1);
 }
 
 section .container {
@@ -82,6 +87,8 @@ section .container {
     border: 5px solid #FF0000;
     box-shadow: 2px 0px 2px rgba(255, 0, 0, 0.25), -2px 0px 2px rgba(255, 0, 0, 0.25), 0px -2px 2px rgba(255, 0, 0, 0.25), 0px 2px 2px rgba(255, 0, 0, 0.25);
     border-radius: 40px;
+    color: #FF0000;
+    background: rgba(255, 0, 0, 0.1);
 }
 
 .main__img {
@@ -111,34 +118,16 @@ h2 {
     font-family: 'Coiny', sans-serif;
     font-size: 70px;
     text-align: center;
+    margin-bottom: 50px;
+    line-height: 70px;
 }
 
 .title__schedule {
-    background: linear-gradient(0deg, #9E1616, #9E1616);
+    background: rgba(1, 199, 183, 1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 4px 4px 0px #00000040;
     margin-top: 136px;
-}
-
-.title__schedule:before {
-    content: url("../img/peshka.png");
-    width: 180px;
-    height: 180px;
-    position: absolute;
-    left: 50px;
-    bottom: 50%;
-}
-
-
-.title__schedule:after {
-    content: url("../img/peshka.png");
-    width: 180px;
-    height: 180px;
-    position: absolute;
-    right: 50px;
-    bottom: 50%;
-    transform: scale(-1, 1)
 }
 
 .box__schedule {
@@ -152,8 +141,8 @@ h2 {
     width: 100%;
     padding: 50px;
     margin-top: 40px;
-    border: 8px solid #9E1616;
-    background: rgba(158, 22, 22, 0.1);
+    border: 8px solid rgba(1, 199, 183, 1);
+    background: rgba(1, 193, 178, 0.1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     text-align: center;
@@ -164,7 +153,7 @@ h2 {
     font-size: 30px;
     line-height: 33px;
     margin-bottom: 20px;
-    color: #9E1616;
+    color: rgba(1, 199, 183, 1);
 }
 
 .card__list {
@@ -181,7 +170,7 @@ h2 {
 }
 
 .title__price {
-    background: linear-gradient(0deg, #007241, #007241);
+    background: linear-gradient(0deg, #9247CA, #9247CA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 4px 4px 0px #00000040;
@@ -213,8 +202,8 @@ h2 {
     height: 335px;
     padding: 50px 43px;
     margin-top: 40px;
-    border: 8px solid #007241;
-    background: rgba(0, 114, 65, 0.1);
+    border: 8px solid rgba(146, 71, 202, 1);
+    background: rgba(146, 71, 202, 0.1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     text-align: center;
@@ -229,7 +218,7 @@ h2 {
 }
 
 .price__card .card__title {
-    color: #007241;
+    color: rgba(146, 71, 202, 1);
 }
 
 .card__desc span {
@@ -249,9 +238,9 @@ h2 {
 }
 
 .title__educators {
-    background: linear-gradient(0deg, #9E1616, #9E1616);
+    background: rgba(1, 199, 183, 1);
     -webkit-background-clip: text;
-    color: #9E1616;
+    color: rgba(1, 199, 183, 1);
     text-shadow: 0px 4px 4px 0px #00000040;
     margin-top: 190px;
 }
@@ -283,19 +272,26 @@ h2 {
 .educator__box {
     max-width: 433px;
     width: 100%;
+    height: 456px;
+    overflow-y: scroll;
     text-align: center;
-    background: rgba(158, 22, 22, 0.1);
-    border: 8px solid #9E1616;
+    background: rgba(1, 193, 178, 0.1);
+    border: 8px solid rgba(1, 199, 183, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     padding: 32px 32px;
+}
+
+.educator__box::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .educator__name {
     font-family: 'Coiny', sans-serif;
     font-size: 30px;
     line-height: 33px;
-    color: #9E1616;
+    color: rgba(1, 199, 183, 1);
     margin-top: 32px;
 }
 
@@ -304,11 +300,12 @@ h2 {
     flex-direction: column;
     margin-top: 20px;
     font-family: 'Nunito', sans-serif;
+    font-weight: 700;
     font-size: 18px;
 }
 
 .title__about {
-    background: linear-gradient(0deg, #007241, #007241);
+    background: rgba(146, 71, 202, 1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 4px 4px 0px #00000040;
@@ -338,7 +335,7 @@ h2 {
 .swiper {
     width: 100%;
     height: 100%;
-    border: 8px solid #007241;
+    border: 8px solid rgba(146, 71, 202, 1);
     border-radius: 40px;
 }
 
@@ -347,7 +344,6 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 0 !important;
     text-align: center;
     font-size: 18px;
     background: rgba(0, 114, 65, 0.1);
@@ -369,6 +365,7 @@ h2 {
     height: 300px;
     width: 300px;
     padding: 0 36px;
+    background: rgba(146, 71, 202, 0.1);
 }
 
 .about__info {
@@ -380,7 +377,7 @@ h2 {
 .about__title {
     font-family: 'Coiny', sans-serif;
     font-size: 26px;
-    color: #007241;
+    color: rgba(146, 71, 202, 1);
     margin-bottom: 20px;
 }
 
@@ -399,7 +396,7 @@ h2 {
 }
 
 .contact__about {
-    background: linear-gradient(0deg, #9E1616, #9E1616);
+    background: rgba(1, 199, 183, 1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 4px 4px 0px #00000040;
@@ -430,7 +427,7 @@ h2 {
     padding: 0;
     width: 100%;
     height: 600px;
-    border: 8px solid #9E1616;
+    border: 8px solid rgba(1, 199, 183, 1);
     box-sizing: border-box;
     border-radius: 40px;
 }
@@ -443,7 +440,7 @@ h2 {
 .footer__box {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -451,11 +448,10 @@ h2 {
 .footer__social {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 110px;
 }
 
 .footer__item a {
-    margin-left: 5px;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -465,9 +461,29 @@ h2 {
 
 .footer__item {
     display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.footer__item-geo {
+    display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 a {
     transition: .2s ease-in-out;
+}
+
+.footer__item__box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__item__box span {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
 }

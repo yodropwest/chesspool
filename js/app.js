@@ -1,16 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: "auto",
     slidesPerGroup: 1,
-    breakpoints: {
-        // when window width is >= 320px
-        320: {
-            slidesPerView: 1,
-        },
-
-        992: {
-            slidesPerView: 3,
-        },
-    }
 });
 
 ymaps.ready(init);
