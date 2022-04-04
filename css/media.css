@@ -1,0 +1,206 @@
+@media screen and (max-width: 991px) {
+    .img__ferz {
+        right: 0;
+    }
+    .img__pool {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header__list,
+    .header__button,
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-mobile {
+        display: block;
+        width: 250px;
+        height: auto;
+    }
+
+    .header {
+      justify-content: center;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .img__pool {
+        width: 100px;
+        left: 90px;
+    }
+
+    .img__ferz {
+        width: 150px;
+        right: 110px;
+    }
+
+    .main__img {
+        height: 160px;
+    }
+
+    .box__schedule {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .educators {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .footer__box,
+    .footer__item{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer__box a {
+        color: #000000;
+    }
+
+    .educator__box img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .educator__info {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .price__card, .schedule__card {
+        padding: 24px 43px;
+        height: auto;
+    }
+
+    .title__educators,
+    .title__about,
+    .contact__about,
+    .title__price {
+        margin-top: 40px;
+    }
+
+    .title__schedule {
+        margin-top: 30px;
+    }
+
+        /* ЗАМЕНА КАРТИНОК */
+    .title__schedule:before {
+        content: url("../img/lit/peshka.png");
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: -35px;
+        bottom: 0;
+    }
+
+    .title__schedule:after {
+        content: url("../img/lit/peshka.png");
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: -35px;
+        bottom: 0;
+        transform: scale(-1, 1)
+    }
+
+    .title__educators:before {
+        content: url("../img/lit/stick.png");
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        left: -35px;
+        bottom: 0;
+        transform: scale(1, 1)
+    }
+
+    .title__educators:after {
+        content: url("../img/lit/stick.png");
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        right: -35px;
+        bottom: 0;
+        transform: scale(-1, 1)
+    }
+
+    .title__about:before {
+        content: url("../img/lit/billiard.png");
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: -35px;
+        bottom: 20%;
+        transform: scale(1, 1)
+    }
+
+    .title__about:after {
+        content: url("../img/lit/billiard.png");
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: -35px;
+        bottom: 20%;
+        transform: scale(-1, 1)
+    }
+
+    .contact__about:before {
+        content: url("../img/lit/tower.png");
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: -35px;
+        bottom: 0;
+        transform: scale(-1, 1)
+    }
+
+    .contact__about:after {
+        content: url("../img/lit/tower.png");
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        right: -35px;
+        bottom: 0;
+    }
+
+    .title__price:before {
+        content: url("../img/lit/horse.png");
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: -35px;
+        bottom: 0;
+    }
+
+    .title__price:after {
+        content: url("../img/lit/horse.png");
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        right: -35px;
+        bottom: 0;
+        transform: scale(-1, 1)
+    }
+
+}
+
+

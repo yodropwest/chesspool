@@ -34,6 +34,10 @@ button {
     margin: 0 auto;
 }
 
+.header__logo-mobile {
+    display: none;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -247,7 +251,7 @@ h2 {
 .title__educators {
     background: linear-gradient(0deg, #9E1616, #9E1616);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #9E1616;
     text-shadow: 0px 4px 4px 0px #00000040;
     margin-top: 190px;
 }
@@ -436,3 +440,34 @@ h2 {
     overflow: hidden;
 }
 
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.footer__item a {
+    margin-left: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer__item {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    transition: .2s ease-in-out;
+}
