@@ -1,6 +1,14 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     slidesPerGroup: 1,
+    breakpoints: {
+        320: {
+            direction: "vertical",
+        },
+        385: {
+            direction: "horizontal",
+        },
+    }
 });
 
 ymaps.ready(init);
